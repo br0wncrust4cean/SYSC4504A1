@@ -20,99 +20,101 @@
                         Photo Details
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        Title
-                        <br/>
-                        <input id="title" type="text" name="title" value="Give your photo a descriptive name" />
-                    </td>                        
-                </tr>
-                <tr>
-                    <td>
-                        Description
-                        <br/>
-                        <textarea name="description" rows="5">Adding a rich description will help with search results</textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul id="two">
-                            <li>
-                                Continent
-                                <br />
-                                <select name="continent">
-                                    <option value="northAmerica">North America</option>
-                                    <option value="southAmerica">South America</option>
-                                    <option value="europe">Europe</option>
-                                </select>              
-                                <br/>                      
-                                Country
-                                <br />
-                                <select name="country">
-                                    <option value="CA">Canada</option>
-                                    <option value="US">United States</option>
-                                    <option value="BR">Brazil</option>
-                                </select>
-                                <br/>
-                                City
-                                <br/>
-                                <input type="text" name="country" />
-                            </li>
-                            <li class="boxes">
-                                <fieldset id="copyrightBox">Copyright?
-                                        <br />
-                                        <input type="radio" name="copyright" value="1" /> All Rights <br />
-                                        <input type="radio" name="copyright" value="2" /> Creative Commons
-                                </fieldset>
-                                <fieldset id="commonsBox">Creative Commons Types
-                                        <br />
-                                        <input type="checkbox" name="cc" value="0" /> Attribution <br />
-                                        <input type="checkbox" name="cc" value="1" /> Noncommercial <br />
-                                        <input type="checkbox" name="cc" value="2" /> Non Derivative Works
-                                </fieldset>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                       <div id="acceptLicense">I accept the software license <input type="checkbox" name="accept" value="on" /></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>
-                                <br/>
-                                Rate this Photo: <br />
-                                <input type="text" name="rate" /> <br />
-                                Color Selection: <br />
-                                <input type="color" name="color" /> <br/>
-                            </li>
-                            <li class="boxes">
-                                <br />
-                                <fieldset>
-                                    Date Taken: <br />
-                                    <input type="date" name="date" /> <br />
-                                    Time Taken: <br />
-                                    <input type="time" name="time" /> <br />
-                                </fieldset>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul id="submitButtons">
-                            <li>
-                                <input type="submit" value="Submit" class="buttonStyle" />
-                            </li>
-                            <li>
-                                &nbsp;<input type="reset" value="Clear Form" class="buttonStyle" />
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
+                <div id="innerForm">
+                    <tr>
+                        <td>
+                            Title
+                            <br/>
+                            <input id="title" type="text" name="title" value="Give your photo a descriptive name" />
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td>
+                            Description
+                            <br/>
+                            <textarea name="description" rows="5">Adding a rich description will help with search results</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul id="two">
+                                <li>
+                                    Continent
+                                    <br />
+                                    <select name="continent">
+                                        <option value="northAmerica">North America</option>
+                                        <option value="southAmerica">South America</option>
+                                        <option value="europe">Europe</option>
+                                    </select>              
+                                    <br/>                      
+                                    Country
+                                    <br />
+                                    <select name="country">
+                                        <option value="CA">Canada</option>
+                                        <option value="US">United States</option>
+                                        <option value="BR">Brazil</option>
+                                    </select>
+                                    <br/>
+                                    City
+                                    <br/>
+                                    <input type="text" name="country" />
+                                </li>
+                                <li class="boxes">
+                                    <fieldset id="copyrightBox">Copyright?
+                                            <br />
+                                            <input type="radio" name="copyright" value="1" /> All Rights <br />
+                                            <input type="radio" name="copyright" value="2" /> Creative Commons
+                                    </fieldset>
+                                    <fieldset id="commonsBox">Creative Commons Types
+                                            <br />
+                                            <input type="checkbox" name="cc[]" value="1" /> Attribution <br />
+                                            <input type="checkbox" name="cc[]" value="2" /> Noncommercial <br />
+                                            <input type="checkbox" name="cc[]" value="3" /> Non Derivative Works
+                                    </fieldset>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div id="acceptLicense">I accept the software license <input type="checkbox" name="accept" value="on" /></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>
+                                    <br/>
+                                    Rate this Photo: <br />
+                                    <input type="text" name="rate" /> <br />
+                                    Color Selection: <br />
+                                    <input type="color" name="color" /> <br/>
+                                </li>
+                                <li class="boxes">
+                                    <br />
+                                    <fieldset>
+                                        Date Taken: <br />
+                                        <input type="date" name="date" /> <br />
+                                        Time Taken: <br />
+                                        <input type="time" name="time" /> <br />
+                                    </fieldset>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul id="submitButtons">
+                                <li>
+                                    <input type="submit" value="Submit" class="buttonStyle" />
+                                </li>
+                                <li>
+                                    &nbsp;<input type="reset" value="Clear Form" class="buttonStyle" />
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </div>
             </table>
         </form>
    </section>
